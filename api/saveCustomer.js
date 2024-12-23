@@ -11,7 +11,16 @@ export default async function handler(req, res) {
 
   try {
     const user = await authenticateUser(req);
-    const { name, phone, email } = req.body;
+    const {
+      name,
+      firstname,
+      lastname,
+      phone,
+      phone2,
+      email,
+      email2,
+      // Add other fields here
+    } = req.body;
 
     if (!name || !phone || !email) {
       return res.status(400).json({ error: 'Name, phone, and email are required' });
@@ -22,9 +31,14 @@ export default async function handler(req, res) {
 
     const result = await db.insert(customers).values({
       name,
+      firstname,
+      lastname,
       phone,
+      phone2,
       email,
-      userId: user.id
+      email2,
+      userId: user.id,
+      // Add other fields here
     }).returning();
 
     res.status(201).json(result[0]);

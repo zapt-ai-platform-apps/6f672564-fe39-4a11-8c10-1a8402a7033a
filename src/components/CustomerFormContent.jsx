@@ -12,25 +12,10 @@ function CustomerFormContent(props) {
           placeholder="Name"
           value={customer().name}
           onInput={(e) => setCustomer({ ...customer(), name: e.target.value })}
-          class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-transparent box-border"
+          class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-transparent box-border text-gray-700"
           required
         />
-        <input
-          type="text"
-          placeholder="Phone"
-          value={customer().phone}
-          onInput={(e) => setCustomer({ ...customer(), phone: e.target.value })}
-          class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-transparent box-border"
-          required
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          value={customer().email}
-          onInput={(e) => setCustomer({ ...customer(), email: e.target.value })}
-          class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-transparent box-border"
-          required
-        />
+        {/* Add other input fields as needed */}
         <div class="flex justify-end space-x-4">
           <button
             type="button"

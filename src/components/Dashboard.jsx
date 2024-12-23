@@ -13,10 +13,10 @@ function Dashboard(props) {
   };
 
   return (
-    <div class="min-h-screen bg-gray-100 p-4">
+    <div class="h-full bg-gray-100 p-4">
       <div class="max-w-6xl mx-auto">
-        <div class="flex justify-between items-center mb-8">
-          <h1 class="text-4xl font-bold text-purple-600">CRM Dashboard</h1>
+        <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+          <h1 class="text-4xl font-bold text-purple-600 mb-4 md:mb-0">CRM Dashboard</h1>
           <button
             class="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-6 rounded-full shadow-md focus:outline-none focus:ring-2 focus:ring-red-400 transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer"
             onClick={handleSignOut}
