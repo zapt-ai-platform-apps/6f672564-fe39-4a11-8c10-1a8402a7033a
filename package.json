@@ -16,8 +16,7 @@
     "@supabase/auth-ui-shared": "^0.1.8",
     "@supabase/auth-ui-solid": "^0.3.2",
     "@zapt/zapt-js": "^1.0.6",
-    "@solidjs/router": "^0.8.4",
-    "drizzle-orm/expressions": "^0.33.0"
+    "@solidjs/router": "^0.8.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
